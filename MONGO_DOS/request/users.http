@@ -1,0 +1,18 @@
+### Variable
+@base=http://localhost:3000
+
+###GET
+GET {{base}}/users
+
+###POST
+POST {{base}}/users
+Content-Type: application/json
+
+{
+    "name":"ANGIESS",
+    "email":"angieS04@gmail.com"
+}
+
+###DELETE
+DELETE  {{base}}/users/8
+

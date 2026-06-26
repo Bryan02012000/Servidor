@@ -1,0 +1,27 @@
+### VARIABLE
+@base=http://localhost:3000
+
+###GET
+GET {{base}}/tasks
+
+###POST
+POST {{base}}/tasks
+Content-Type: application/json
+
+{
+    "title":"COMPRA LECHE",
+    "priority":"high",
+    "user":"6a3d6eb96ff8c98eb6bcbd38"
+}
+
+###PUT
+PUT {{base}}/tasks/6a3d701c6ff8c98eb6bcbd49
+Content-Type: application/json
+
+{
+    "done":"true",
+    "user": "6a3d6ed46ff8c98eb6bcbd3e"
+}
+
+###DELETE
+DELETE {{base}}/tasks/6a3d6f636ff8c98eb6bcbd42

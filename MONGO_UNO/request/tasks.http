@@ -1,0 +1,26 @@
+### Variable
+@base = http://localhost:3000
+
+### GET 
+GET {{base}}/tasks
+
+### POST
+POST {{base}}/tasks
+Content-Type: application/json
+
+{
+    "title":"comprar pan",
+    "priority":"high",
+    "user":"6a3c6ddace357ace798cc636"
+}
+
+### PUT
+PUT {{base}}/tasks/6a3c094e73abdc00fe433593
+Content-Type: application/json
+
+{
+    "done":"true"
+}
+
+### DELETE
+DELETE {{base}}/tasks/6a3c094e73abdc00fe433593
