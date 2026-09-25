@@ -1,5 +1,5 @@
 function saludar(nombre){
     return "Hola "+nombre;
 }
-console.log(saludar("Bryan"))
+module.exports.saludar=saludar;
 

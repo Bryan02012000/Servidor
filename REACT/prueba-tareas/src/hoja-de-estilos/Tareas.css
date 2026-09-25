@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.tarea-creada{
+    display: flex;
+    justify-content: space-between; /* Separa el texto a la izquierda y el botón a la derecha */
+    align-items: center;            /* Centra verticalmente el texto y el botón */
+    border: 2px solid white;
+    color: white;
+    font-size: 20px;
+    min-height: 50px;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px 15px;             /* Evita que los elementos toquen los bordes */
+    overflow-wrap: anywhere;
+}
+
+.eliminar{
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: auto;
+}
+

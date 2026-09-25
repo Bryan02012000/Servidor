@@ -1,0 +1,18 @@
+.contador{
+  text-align: center;
+  color: rgb(202, 146, 146);
+  font-size: 60px;
+  font-family:monospace;
+  border: 10px solid white;
+
+  width: 500px;
+  height: 180px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px auto;
+
+  
+}

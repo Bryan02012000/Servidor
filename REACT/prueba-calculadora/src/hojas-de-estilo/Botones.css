@@ -1,0 +1,36 @@
+button{
+    width: 80px;
+    height: 75px;
+    margin: 14px;
+    margin-top: 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: solid white 3px;
+}
+button.boton-numero{
+    background-color: #1b1b32;
+    color: white;
+}
+button.boton-operador{
+    background-color: #00471b;
+    color: white;
+}
+button.boton-numero:hover{
+    background-color: blueviolet;
+}
+
+button.boton-operador:hover{
+    background-color: rgb(236, 143, 38);
+}
+
+.boton-clear{
+    margin-top: 2px;
+    width: 90%;
+    background-color: rgb(134, 10, 134);
+    color: white;
+    border-radius: 50px;
+}
+
+.boton-clear:hover{
+    background-color: #ebb000
+}

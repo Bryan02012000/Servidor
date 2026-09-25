@@ -1,0 +1,42 @@
+.boton-clic{
+    background-color: green;
+    color: white;
+    font-size: 2.4em;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px auto;
+
+    white-space: nowrap;
+    width: max-content;
+    min-width: 200px;
+    padding: 15px 30px;
+
+    border-radius: 10px;
+}
+
+.boton-reiniciar{
+    display: flex;
+    background-color: green;
+    color: white;
+    font-size: 2.4em;
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+
+    white-space: nowrap;
+    width: max-content;
+    min-width: 200px;
+    padding: 15px 30px;
+
+    border-radius: 10px;
+}
+
+.contenedor-Boton:hover{
+    background-color: #004d00;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.contenedor-num-clics{
+    border-color: aliceblue;
+}

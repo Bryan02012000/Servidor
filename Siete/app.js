@@ -1,9 +1,8 @@
-const http=require('http');
+const http=require("http");
 const servidor=http.createServer((req,res)=>{
-    console.log(req.url);
-    res.end("Hola mundo")
+    res.end("Hola mundossss");
 })
 
 servidor.listen(3000,()=>{
-    console.log("El servidor está esuchando...")
+    console.log("SERVIDOR ESCUCHANDO")
 })

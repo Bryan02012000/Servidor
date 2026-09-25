@@ -15,9 +15,9 @@ router.get('/', async (req, res, next) => {
 
         const tasks = await Task
           .find(filter)
-          .populate('user', 'name')
+          .populate('user', 'name email')
           .sort({ createdAt: -1 })   // más recientes primero
-          .limit(10)                  // máx 10 por página
+          .limit(11)                  // máx 10 por página
           .skip((page - 1) * 10);   // saltar páginas anteriores
 
         res.json(tasks);

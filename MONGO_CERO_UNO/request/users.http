@@ -1,0 +1,20 @@
+@base = http://localhost:3000/users
+###
+POST {{base}}
+Content-Type: application/json
+
+{
+    "name":"perrito",
+    "email":"perrtio@gmail.com"
+}
+
+###
+PUT {{base}}/6a8c8369fb3d878a00e20c22
+Content-Type: application/json
+
+{
+    "name":"perrito cambió de nuevo"
+}
+
+###
+DELETE  {{base}}/6a8c8369fb3d878a00e20c22

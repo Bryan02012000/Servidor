@@ -1,0 +1,18 @@
+@base = http://localhost:3000/tasks
+
+POST {{base}}
+Content-Type: application/json
+
+{
+    "title":"Hacer el baño"
+}
+###
+PUT {{base}}/6a3d8250ce6046c039fc659e
+Content-Type: application/json
+
+{
+    "done":true
+}
+
+###
+DELETE {{base}}/6a3d8250ce6046c039fc65a4
