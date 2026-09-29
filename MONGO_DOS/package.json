@@ -1,0 +1,19 @@
+{
+  "name": "mongo_dos",
+  "version": "1.0.0",
+  "description": "1. npm install 2. Copiar .env.example a .env y llenar las variables 3. npm start",
+  "main": "app.js",
+ "scripts": {
+  "start": "node app.js",
+  "dev": "nodemon app.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "mongoose": "^8.24.4"
+  }
+}
