@@ -1,16 +1,27 @@
-# React + Vite
+# 📋 Tareas Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web interactiva para la gestión de tareas, construida con React y React Router, conectada a una API REST en Express/MongoDB.
 
-Currently, two official plugins are available:
+## 🚀 Características
+* **CRUD Completo:** Ver, crear, editar y eliminar tareas en tiempo real.
+* **Navegación:** Configurada con `React Router` para la navegación fluida entre distintas vistas.
+* **Interfaz Modular:** Componentes reutilizables estructurados para escalabilidad.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologías Utilizadas
+* **React** (Vite)
+* **React Router DOM**
+* **CSS**
 
-## React Compiler
+## ⚙️ Cómo ejecutar en local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Entrar a la carpeta del proyecto:
+   cd tareas-frontend-dos
 
-## Expanding the ESLint configuration
+2. Instalar dependencias:
+   npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Iniciar el servidor de desarrollo:
+   npm run dev
+
+4. Abrir en el navegador:
+http://localhost:5173
