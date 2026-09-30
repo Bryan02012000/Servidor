@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "1. npm install 2. Copiar .env.example a .env y llenar las variables 3. npm start",
   "main": "app.js",
- "scripts": {
-  "start": "node app.js",
-  "dev": "nodemon app.js"
-},
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
