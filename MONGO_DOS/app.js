@@ -1,22 +1,17 @@
 require('dotenv').config();
 const express=require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
+
 const taskRoutes=require('./src/routes/tasks');
 const userRoutes=require('./src/routes/users');
 const errorHandler=require('./src/Middleware/errorHadler')
-const cors = require('cors');
 
+const app = express();
 
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
-
-
-const app=express();
-
+app.use(cors());
 app.use(express.json());
+
 
 app.use("/tasks",taskRoutes);
 app.use("/users",userRoutes);
