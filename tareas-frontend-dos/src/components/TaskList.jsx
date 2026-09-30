@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 import TaskItem from "./TaskItem";
 import TaskForm from "./TasksForm";
 import axios from "axios"
+const API_URL = import.meta.env.VITE_API_URL;
 
 function TaskList(){
     const [loading, setLoading] = useState(true);
     const [task, setTask] = useState([]);
+
     useEffect(()=>{
-        axios.get('/tasks')
+        axios.get(API_URL+'/tasks')
         .then((res)=>{
             setTask(res.data);
             setLoading(false);
@@ -25,7 +27,7 @@ function TaskList(){
     };
 
     const handleDelete = async (id) => {
-        await axios.delete(`/tasks/${id}`); 
+        await axios.delete(`${API_URL}/tasks/${id}`); 
         setTask(task.filter(t => t._id !== id)); 
     };
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+const API_URL = import.meta.env.VITE_API_URL;
 
 function TaskForm({ onTaskCreated }){
     const [title, setTitle] = useState('');
@@ -7,7 +8,7 @@ function TaskForm({ onTaskCreated }){
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const {data} = await axios.post('/tasks', {title,priority});
+        const {data} = await axios.post(API_URL+'/tasks', {title,priority});
         onTaskCreated(data);
         setTitle('');
     }

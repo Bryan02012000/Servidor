@@ -1,5 +1,7 @@
 import axios from 'axios';
 import {useState} from 'react'
+const API_URL = import.meta.env.VITE_API_URL;
+
 function TaskItem({task, onDelete, onUpdate}){
     const [editing, setEditing] = useState(false);
     const [title, setTitle]=useState(task.titulo || task.title);
@@ -8,7 +10,7 @@ function TaskItem({task, onDelete, onUpdate}){
 
     const toggleDone = async ()=>{
         try{
-            const {data} = await axios.put('/tasks/'+task._id,{done:!tareaCompletada});
+            const {data} = await axios.put(API_URL+'/tasks/'+task._id,{done:!tareaCompletada});
             onUpdate(data);
         }catch(err){
             console.error('Error al actualizar los datos: '+err)
@@ -18,7 +20,7 @@ function TaskItem({task, onDelete, onUpdate}){
     const saveTitle = async ()=>{
         if(!title.trim()) return setEditing(false)
         try{
-            const{data}=await axios.put('/tasks/'+task._id,{title})
+            const{data}=await axios.put(API_URL+'/tasks/'+task._id,{title})
             onUpdate(data);
             setEditing(false)
         }catch(err){
