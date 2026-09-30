@@ -4,7 +4,7 @@ import UsersPage from './pages/UsersPage';
 
 function App() {
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px', fontFamily: 'sans-serif' }}>
+    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '20px', fontFamily: 'sans-serif', background:'#444' }}>
       {/* Barra de Navegación */}
       <nav style={{ marginBottom: '20px', paddingBottom: '10px', borderBottom: '1px solid #444' }}>
         <Link to="/" style={{ color: '#61dafbaa', marginRight: '20px', textDecoration: 'none', fontWeight: 'bold' }}>
