@@ -1,0 +1,11 @@
+### Subir archivo a AWS S3
+POST http://localhost:3000/upload
+Content-Type: multipart/form-data; boundary=----MiLimiteDeArchivo
+
+------MiLimiteDeArchivo
+Content-Disposition: form-data; name="archivo"; filename="pruebaa.jpeg"
+Content-Type: image/jpeg
+Content-Transfer-Encoding: binary
+
+< ./pruebaa.jpeg
+------MiLimiteDeArchivo--
